@@ -1,0 +1,29 @@
+{
+	"namespace" : "com.unit_test.entity",
+	"type" : "record",
+	"name": "StoredProcedure",
+	"fields" : [
+		{ 	
+			"name": "Parameters",
+			"doc": "Map of parameter and type passed in",
+		    "type":
+		    {
+			    "type": "array",
+			    "items":
+			    {
+				    "type":"map",
+				    "values":"string"
+		        }
+		    }
+		},
+		{	
+			"name": "Table", 
+			"doc": "Map of tables found in procedure",
+			"type": 
+			{	
+				"type": "array",
+				"items" : "string"
+			}
+		}
+	]
+}
